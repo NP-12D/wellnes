@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="form.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <form
+        action="https://one.coding-world.com/contactform/submit.php"
+        method="post"
+        target="_blank"
+      >
+        <h1>საკონტაქტო ფორმა</h1>
+        <div>
+          <label for="name">სახელი:</label>
+          <input type="text" name="name" id="name" required />
+        </div>
+        <div>
+          <label for="email">მეილი:</label>
+          <input type="email" name="email" id="email" required />
+        </div>
+        <div>
+          <label for="message">შეტყობინება:</label>
+          <textarea
+            type="text"
+            name="message"
+            id="message"
+            placeholder="შეტყობინების ტექსტი..."
+            required
+          ></textarea>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" name="adult" id="adult" value="yes" />
+          <label for="adult">ვარ სრულწოვანი</label>
+        </div>
+        <div class="button">
+          <button type="submit">გაგზავნა</button>
+          <button type="reset">გასუფთავება</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
