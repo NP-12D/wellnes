@@ -55,15 +55,19 @@ nav img {
 .pages_list {
   display: none;
 }
-.pages_list {
+/* .pages_list {
   flex-direction: column;
   position: fixed;
-}
+} */
 .open {
   display: flex;
+    flex-direction: column;
+  position: fixed;
 }
 .pages_div:hover .pages_list {
   display: flex !important;
+   flex-direction: column;
+  position: fixed;
 }
 .row_menu > div ul li {
   text-align: center;
