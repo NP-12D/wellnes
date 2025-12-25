@@ -47,8 +47,6 @@ nav img {
 }
 .row_menu > div {
   display: flex;
-
-
 }
 .row_menu > div p {
   text-align: center;
@@ -56,7 +54,6 @@ nav img {
 }
 .pages_list {
   display: none;
-   
 }
 /* .pages_list {
   flex-direction: column;
@@ -64,20 +61,19 @@ nav img {
 } */
 .open {
   display: flex;
-    flex-direction: column;
+  flex-direction: column;
   position: absolute;
 }
 .pages_div:hover .pages_list {
- left: -10px;
- width: 100%;
+  left: -10px;
+  width: 100%;
   display: flex !important;
   align-items: center;
-   flex-direction: column;
+  flex-direction: column;
   position: absolute;
 }
-.pages_div{
+.pages_div {
   position: relative;
-  
 }
 .row_menu > div ul li {
   text-align: center;
@@ -415,4 +411,3 @@ hr {
     font-size: 36px;
   }
 }
-

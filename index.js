@@ -28,18 +28,6 @@ function burgermenu() {
   });
 }
 
-// window.addEventListener("scroll", function () {
-//   if (window.scrollY > 20) {
-//     document.querySelector(".pages_list").style.display  = "relative";
-//   } else {
-//     document.querySelector(".pages_list").classList.add(".pages_list");
-    
-//   }
-// });
-
-
-
-
 document.querySelector(".pages_list").addEventListener("touchstart", () => {
   document.querySelector(".pages_list").classList.toggle("open");
 });
