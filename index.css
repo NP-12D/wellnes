@@ -47,6 +47,8 @@ nav img {
 }
 .row_menu > div {
   display: flex;
+
+
 }
 .row_menu > div p {
   text-align: center;
@@ -54,6 +56,7 @@ nav img {
 }
 .pages_list {
   display: none;
+   
 }
 /* .pages_list {
   flex-direction: column;
@@ -62,16 +65,24 @@ nav img {
 .open {
   display: flex;
     flex-direction: column;
-  position: fixed;
+  position: absolute;
 }
 .pages_div:hover .pages_list {
+ left: -10px;
+ width: 100%;
   display: flex !important;
+  align-items: center;
    flex-direction: column;
-  position: fixed;
+  position: absolute;
+}
+.pages_div{
+  position: relative;
+  
 }
 .row_menu > div ul li {
   text-align: center;
   background-color: #f2f2f2;
+  width: 100%;
   gap: 2px;
 }
 .row_menu a,
