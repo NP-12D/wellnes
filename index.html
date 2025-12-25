@@ -13,12 +13,28 @@
   <body>
     <header>
       <nav>
-        <div class="logo"><img src="logo-black.png" /></div>
-        <div>
-          <a href="#">Home</a>
-          <a href="#">Pages</a>
-          <a href="#">contact us</a>
-          <a href="#">?</a>
+        <div class="logo"><img src="./images/logo-black.png" /></div>
+        <div class="row_menu">
+          <div class="menu_cont">
+            <a href="#">Home</a>
+            <div class="pages_div">
+              <p>Pages <img class="down"src="./images/down.png"></p>
+              <ul class="pages_list" >
+                 <li><a href="#ourteam"> Team </a></li>
+                 <li> <a href="#aboutus">About Us </a></li>
+                 <li> <a href="#contact">Faq </a></li>
+
+              </ul>
+            </div>
+            <a href="#contact">Contact Us</a>
+            <a href="#"><img class="search" src="images/search.png" ></a>
+          </div>
+        </div>
+
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
         </div>
       </nav>
     </header>
@@ -26,21 +42,25 @@
       <section class="head">
         <h1>Our Experts</h1>
       </section>
-      <section class="person">
+      <section id="aboutus" class="person">
         <img
           src="https://tse1.mm.bing.net/th/id/OIP.BrTshBl7lj4Cej6HtGixRwHaLH?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3"
         />
         <div>
           <p>
-           
-            Meet our staff of experts who focus at condimentum a, venenatis placerat libero. Proin blandit tincidunt pretium. Maecenas nec magna a ex congue vulputate eu eget lorem. Donec maximus ex nibh, sit amet ullamcorper felis hendrerit vitae. Phasellus magna sem, blandit vitae erat eu, tempor auctor velit. Etiam nisl sapien, porta nec elementum vel, varius sit amet augue. Aliquam erat volutpa
+            Meet our staff of experts who focus at condimentum a, venenatis
+            placerat libero. Proin blandit tincidunt pretium. Maecenas nec magna
+            a ex congue vulputate eu eget lorem. Donec maximus ex nibh, sit amet
+            ullamcorper felis hendrerit vitae. Phasellus magna sem, blandit
+            vitae erat eu, tempor auctor velit. Etiam nisl sapien, porta nec
+            elementum vel, varius sit amet augue. Aliquam erat volutpa
           </p>
           <h3>image from <a href="#">Freepik</a></h3>
           <h2>Monica Pouli</h2>
           <p>createv leader</p>
         </div>
       </section>
-      <section class="cards">
+      <section id="ourteam" class="cards">
         <h2>Our Amazig team</h2>
         <div class="cards_div">
           <div>
@@ -83,52 +103,56 @@
 
               <a class="blue" href="#"> Sr.Director</a>
             </div>
-            
           </div>
-          
         </div>
-         <p>Image from <a href="#">Freepik</a></p>
+        <p>Image from <a href="#">Freepik</a></p>
       </section>
     </main>
-    <footer>
+    <footer id="contact">
       <div class="footer_coll">
         <div class="footer_logo">
-            <img src="logo-black.png" />
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis,  
-             ipsum dolor sit amet consectetur, adipisicing elit. Facilis,  </p>
-            <p>Image from <a href="#">Freepik</a></p>
+          <img src="./images/logo-black.png" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis,
+            ipsum dolor sit amet consectetur, adipisicing elit. Facilis,
+          </p>
+          <p>Image from <a href="#">Freepik</a></p>
         </div>
         <div class="help">
-            <p>HELP</p>
-            <hr>
-            <ul>
-                <li><a href="#">FAQs</a>FAQs</li>
-                <li ><a href="#">Services</a></li>
-                <li ><a href="#">contact us</a></li>
-                <li ><a href="#">News & Bloge</a></li>
-            </ul>
+          <p>HELP</p>
+          <hr />
+          <ul>
+            <li><a href="#">FAQs</a>FAQs</li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">contact us</a></li>
+            <li><a href="#">News & Bloge</a></li>
+          </ul>
         </div>
         <div class="getintouch">
-             <p>Get in Touch</p>
-            <hr>
-            <ul>
-                <li><a href="">Adress</a></li>
-                <li><a href="tel:597871097">597871097 </a></li>
-                <li><a href="mailto:nona.pareulidze@gmail.com">nona.pareulidze@gmail.com"</a></li>
-            </ul>
+          <p>Get in Touch</p>
+          <hr />
+          <ul>
+            <li><a href=""> <img src="images/location.png" >14E 12th st, New York Ny 100027 United States</a></li>
+            <li><a href="tel:+1 (234) 456 789"> <img src="images/telephone-handle-silhouette.png"> +1 (234) 456 789 </a></li>
+            <li>
+              <a href="mailto:hi@company.com"
+                ><img src="images/mail.png"> hi@company.com</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
       <hr />
       <div class="footer_end">
-      <div class="footer_menue">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Our Team</a>
-        <a href="#">Contact </a>
-        
+        <div class="footer_menue">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Our Team</a>
+          <a href="#">Contact </a>
+        </div>
+        <p>Nicepage &copy; 2025. All Right Reserved</p>
       </div>
-      <p>Nicepage &copy; 2025. All Right Reserved</p>
-    </div>
-    </footer>
+    </footer id="contact">
+    <script src="./index.js"></script>
   </body>
 </html>
