@@ -3,10 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
-.no-scroll{
- height: 100vh;
- overflow: hidden;
+.no-scroll {
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
 }
+
 body {
   width: 100%;
   min-height: 100vh;
@@ -24,13 +27,14 @@ header {
   height: 100px;
   padding: 20px;
 }
-.down{
+.down {
   height: 14px;
 }
-.search, a img{
-   height: 16px;
-   width: 16px;
-   object-fit: cover;
+.search,
+a img {
+  height: 16px;
+  width: 16px;
+  object-fit: cover;
 }
 
 nav {
@@ -41,28 +45,33 @@ nav {
 nav img {
   height: 50px;
 }
-.row_menu>div{
-display: flex;
+.row_menu > div {
+  display: flex;
 }
-.row_menu>div p{
+.row_menu > div p {
   text-align: center;
   cursor: pointer;
 }
 .pages_list {
-display: none 
+  display: none;
 }
 .pages_list {
   flex-direction: column;
   position: fixed;
 }
-
-.pages_div:hover .pages_list { display: flex !important;; }
-.row_menu>div ul li{
-text-align: center;
-background-color: #f2f2f2;
-gap: 2px;
+.open {
+  display: flex;
 }
-.row_menu a, .row_menu div {
+.pages_div:hover .pages_list {
+  display: flex !important;
+}
+.row_menu > div ul li {
+  text-align: center;
+  background-color: #f2f2f2;
+  gap: 2px;
+}
+.row_menu a,
+.row_menu div {
   width: max-content;
 
   padding: 10px;
@@ -85,7 +94,7 @@ gap: 2px;
 .menu_content {
   background: #fff;
   padding: 32px !important;
-  height:40%;
+  height: 40%;
   border-radius: 8px;
   text-align: center;
   max-width: 400px;
@@ -276,18 +285,17 @@ footer a {
 ul li a:hover {
   text-decoration: underline;
 }
-.footer_coll ul{
+.footer_coll ul {
   display: flex;
   flex-direction: column;
-  gap:10px;
+  gap: 10px;
 }
-.footer_coll ul li a{
+.footer_coll ul li a {
   display: flex;
   align-items: center;
-  gap:10px;
- 
+  gap: 10px;
 }
-hr{
+hr {
   margin-block: 5px;
   border: 1px solid white;
 }
@@ -391,3 +399,4 @@ hr{
     font-size: 36px;
   }
 }
+

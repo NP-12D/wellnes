@@ -1,14 +1,21 @@
 let burger = document.querySelector(".burger");
 let menu = document.querySelector("nav >div:nth-of-type(2)");
 let menu_content = document.querySelector(".menu_cont");
-let burger_listitems = document.querySelectorAll(".menu_cont> a");
+let burger_listitems = document.querySelectorAll(
+  ".menu_content> a,.menu_content> div"
+);
+
 burger.addEventListener("click", burgermenu);
 burger_listitems.forEach((item) => {
   item.addEventListener("click", () => {
-    if (document.querySelector(".row_menu").classList.contains("menu")) {
-      burgermenu();
-    }
+    burgermenu;
   });
+});
+burger.addEventListener("click", burgermenu);
+menu.addEventListener("click", function () {
+  if (menu.classList.contains("menu")) {
+    burgermenu();
+  }
 });
 
 function burgermenu() {
@@ -27,4 +34,7 @@ window.addEventListener("scroll", function () {
   } else {
     document.querySelector(".pages_list").classList.add(".pages_list");
   }
+});
+document.querySelector(".pages_list").addEventListener("touchstart", () => {
+  pagesList.classList.toggle("open");
 });
