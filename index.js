@@ -8,7 +8,7 @@ let burger_listitems = document.querySelectorAll(
 burger.addEventListener("click", burgermenu);
 burger_listitems.forEach((item) => {
   item.addEventListener("click", () => {
-    burgermenu;
+    burgermenu();
   });
 });
 burger.addEventListener("click", burgermenu);
@@ -36,5 +36,5 @@ window.addEventListener("scroll", function () {
   }
 });
 document.querySelector(".pages_list").addEventListener("touchstart", () => {
-  pagesList.classList.toggle("open");
+  document.querySelector(".pages_list").classList.toggle("open");
 });
